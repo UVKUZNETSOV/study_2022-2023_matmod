@@ -63,18 +63,18 @@ header-includes:
 ```
 mkdir work/study/2022-2023/"Математическое моделирование"/matmod
 ```
-![Подготовка рабочей среды](src/6.png)
-![Подготовка рабочей среды](src/5.png)
+![Подготовка рабочей среды](img/6.png)
+![Подготовка рабочей среды](img/5.png)
    
   Создадим репозиторий с названием study_2022-2023_matmod. 
    
-![Создание репозитория](src/4.png)
+![Создание репозитория](img/4.png)
 
   В каталоге создадим следующие файлы:
 ```
 touch LICENSE.md, touch CHANGELOG.md, touch README.md, touch .gitignore
 ```
-![Создание README.md, .gitignore, CHANGELOG.md, LICENSE.md](src/3.png)
+![Создание README.md, .gitignore, CHANGELOG.md, LICENSE.md](img/3.png)
 
   Заполняем файлы информацией. В файле .gitignore пописываем элементы для языка Julia. 
 
@@ -82,7 +82,7 @@ touch LICENSE.md, touch CHANGELOG.md, touch README.md, touch .gitignore
 
   На github сгенерируем токен для отправки файлов на сервер. 
 
-![Git Token Classic](src/1.png)
+![Git Token Classic](img/1.png)
 
   Инициализируем git и делаем коммит. 
 ```
@@ -96,15 +96,15 @@ git branch -M main
 git remote add origin https://github.com/UVKUZNETSOV/study_2022-2023_matmod.git
 git push https://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@github.com/UVKUZNETSOV/study_2022-2023_matmod.git
 ```
-![Init commit (local)](src/7.png)
+![Init commit (local)](img/7.png)
 
-![Init commit (git)](src/8.png)
+![Init commit (git)](img/8.png)
 
   Создадим папку labs. В папке создадим каталог lab01, в котором пропишем report.md. 
 ```
 mkdir -p labs/lab01, cd labs/lab01/, touch report.md
 ```
-![Создание report.md](src/9.png)
+![Создание report.md](img/9.png)
 
   Создадим коммит отчета.
 ``` 
@@ -112,13 +112,13 @@ git add labs/lab01/report.md,
 git commit -m "empty report",
 git push https://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@github.com/av-ilin/study_2022-2023_mathmod.git
 ```
-![Commit report.md](src/10.png)
+![Commit report.md](img/10.png)
   Конвертируем отчет используя pandoc. 
 ```
 pandoc report.md -o report.pdf
 pandoc report.md -o report.docx
 ```
-![Markdown to PDF](src/11.png)
+![Markdown to PDF](img/11.png)
 
 # Вывод
 Мы повторили алгоритм работы с github и ознакомились с базовой структурой написания отчётов на MarkDown. 
